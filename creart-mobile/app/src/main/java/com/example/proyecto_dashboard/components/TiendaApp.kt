@@ -1,5 +1,7 @@
 package com.example.proyecto_dashboard.components
 
+import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
@@ -26,6 +28,7 @@ enum class PageScreen() {
  * Composable principal de la aplicación "TiendaApp" que contiene el Scaffold y el NavHost
  * para manejar la navegación entre pantallas.
  */
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TiendaApp(
@@ -68,6 +71,7 @@ fun ScaffoldContent(//1
     }
 }
 
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @Composable
 fun Navigation_Host(navController: NavHostController) {
     NavHost(
@@ -87,7 +91,7 @@ fun Navigation_Host(navController: NavHostController) {
             Page_Flores()
         }
         composable(MenuItem.Page03.ruta){
-            Page_Frutas_Verduras()
+            AddOrderScreen()
         }
         composable(MenuItem.Page04.ruta){
             Page_Huevos()
@@ -106,6 +110,8 @@ fun Navigation_Host(navController: NavHostController) {
         }
     }
 }
+
+
 
 @Composable
 fun Current_Route(navController: NavHostController): String? {

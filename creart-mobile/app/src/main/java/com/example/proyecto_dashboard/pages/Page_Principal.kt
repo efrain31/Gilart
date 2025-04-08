@@ -396,7 +396,7 @@ fun mostrarCategoria() {
                                 },
                                 modifier = Modifier.weight(1f)
                             ) {
-                                Text(text = "Comprar")
+                                Text(text = "Disponible")
                             }
                         }
                     }

@@ -9,6 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.proyecto_dashboard"
+
         minSdk 29
         targetSdk 33
         versionCode 1
@@ -52,6 +53,23 @@ android {
 }
 
 dependencies {
+    implementation 'androidx.compose.material:material:1.4.0'
+
+    implementation "androidx.compose.ui:ui:1.5.0"
+    implementation "androidx.compose.material3:material3:1.0.1"
+    implementation "androidx.navigation:navigation-compose:2.5.0"
+
+    // Dependencia para la cámara
+    implementation "androidx.camera:camera-camera2:1.1.0-beta01"
+    implementation "androidx.camera:camera-lifecycle:1.1.0-beta01"
+    implementation "androidx.camera:camera-view:1.1.0-beta01"
+
+    // Dependencia para el generador de QR
+    implementation "com.google.zxing:core:3.4.0"
+
+    // Dependencia para notificaciones
+    implementation "androidx.core:core-ktx:1.9.0"
+
     implementation 'androidx.compose.material3:material3:1.0.0'
 
     implementation "androidx.compose.material3:material3:1.0.0"

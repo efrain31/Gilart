@@ -222,7 +222,7 @@ fun Page_Flores(modifier: Modifier = Modifier) {
                                     selectedProduct = null
                                 }
                             ) {
-                                Text(text = "Comprar")
+                                Text(text = "Disponible")
                             }
                         }
                     }
@@ -261,7 +261,7 @@ private val favoriteCollectionsData = listOf(
     Triple(R.drawable.oleo52, Oleo1, detalles12),
     Triple(R.drawable.oleo51, Oleo1, detalles13),
     Triple(R.drawable.oleo67, Oleo1, detalles14),
-    Triple(R.drawable.oleo66, Oleo1, detalles14),
+    Triple(R.drawable.bya1, Oleo1, detalles15),
 
 
 
@@ -272,13 +272,7 @@ private val favoriteCollectionsData = listOf(
  */
 @Composable
 fun ComprarButton() {
-    OutlinedButton(
-        onClick = {
-            contadorState++
-        }
-    ) {
-        Text(text = "Comprar")
-    }
+
 }
 
 /*
@@ -288,10 +282,7 @@ fun ComprarButton() {
 fun CarritoButton() {
     Box(modifier = Modifier.padding(top = 8.dp)) {
         IconButton(onClick = { /* TODO: Acción al hacer clic */ }) {
-            Icon(
-                imageVector = Icons.Filled.ShoppingCart,
-                contentDescription = "Refrescar"
-            )
+
         }
 
         if (contadorState > 0) {

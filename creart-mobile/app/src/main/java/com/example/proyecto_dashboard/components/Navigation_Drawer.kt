@@ -108,7 +108,6 @@ fun DrawerItem(
             contentScale = ContentScale.Crop,
             modifier = Modifier
                 .size(40.dp)
-                .clip(CircleShape)
         )
         Spacer(modifier = Modifier.width(12.dp))
         // Título del elemento del menú

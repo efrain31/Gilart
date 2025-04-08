@@ -12,8 +12,10 @@ sealed class MenuItem (
     object Page01: MenuItem(R.drawable.ic_principal, "Home", "page01")
     object Main: MenuItem(R.drawable.ic_principal, "Home", "main")
     object Page02: MenuItem(R.drawable.pintura2 , "Oleos", "page02")
-    object Page03: MenuItem(R.drawable.canva, "Canvas", "page03")
     object Page04: MenuItem(R.drawable.foto, "Fotografias", "page04")
     object Page05: MenuItem(R.drawable.frame, "Marcos", "page05")
+    object Page03: MenuItem(R.drawable.ic_shopping_cart_24, "Pedidos", "page03")
     object Page06: MenuItem(R.drawable.nostros2, "Sobre nostros", "page06")
+    object Ticket: MenuItem(R.drawable.ic_shopping_cart_24, "Ticket", "ticket")
+
 }

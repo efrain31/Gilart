@@ -195,7 +195,7 @@ fun Page_Lacteos(modifier: Modifier = Modifier) {
                                     selectedProduct = null
                                 }
                             ) {
-                                Text(text = "Comprar")
+                                Text(text = "Disponible")
                             }
                         }
                     }

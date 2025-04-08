@@ -1,0 +1,6 @@
+<paths>
+    <external-files-path name="documents" path="." />
+    <external-path
+        name="external_files"
+        path="." />
+</paths>
